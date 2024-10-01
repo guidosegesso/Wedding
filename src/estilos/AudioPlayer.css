@@ -1,0 +1,30 @@
+.audio-player {
+    position: fixed;
+    top: 15vh; /* Debajo del selector de idioma */
+    right: 10px;
+    z-index: 110;
+  }
+  
+  .audio-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .audio-button img {
+    width: 30px; /* Tamaño del ícono del parlante */
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .audio-player {
+      bottom: 50px; /* Ajustar la posición en móviles */
+      top: auto;
+    }
+  
+    .audio-button img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

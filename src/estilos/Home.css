@@ -1,0 +1,98 @@
+.home {
+    /* height: 100vh;
+    background-image: url('../images/beach2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  
+  .home-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: -1; /* Para que el contenido esté por encima del video */
+  }
+
+  .home-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .home h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .home p {
+    font-size: 2rem;
+    color: var(--colorDorado); 
+  }
+  
+
+  /* Para resoluciones medianas (como 1280x720) */
+@media (max-width: 1280px) {
+  .home {
+    padding-top: 70px; /* Ajustar el margen para el navbar */
+  }
+
+  .home-content {
+    font-size: 2.5rem; /* Ajuste para pantallas medianas */
+  }
+}
+
+
+
+/* Estilos para resoluciones más pequeñas */
+@media (max-width: 768px) {
+  /* Ajustar la altura del Home según el contenido en móviles */
+  .home {
+    padding-top: 60px;
+    height: auto; /* Ajuste dinámico de la altura */
+    min-height: 50vh; /* Asegura que no sea demasiado pequeño */
+  }
+
+  .home-content {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .home-video {
+    object-fit: contain;
+    height: auto; /* Permite que el video se ajuste según su proporción */
+    min-height: 50vh; /* Para que no sea demasiado pequeño */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste adicional para móviles más pequeños */
+  .home {
+    padding-top: 50px;
+    height: auto;
+    min-height: 40vh;
+  }
+
+  .home-content {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .home-video {
+    object-fit: contain;
+    height: auto;
+    min-height: 40vh;
+  }
+}

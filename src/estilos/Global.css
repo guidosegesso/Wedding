@@ -1,0 +1,27 @@
+:root {
+    --colorVerdeMilitar: #4a5841; /* Verde militar */
+    --colorDorado: #b38b59; /* Dorado */
+  }
+
+  
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  width: 100%;
+  max-width: 100vw; /* Asegura que no haya desbordamiento más allá del ancho de la ventana */
+}

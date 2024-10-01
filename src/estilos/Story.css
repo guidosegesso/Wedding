@@ -1,0 +1,36 @@
+.story-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Mantiene el espacio entre la imagen y el texto */
+  padding: 5vh;
+  background-color: rgba(148, 147, 87, 0.315);
+}
+
+.story-item img {
+  width: 30%; /* Limita el ancho de las imágenes */
+  border-radius: 5%;
+  object-fit: cover; /* Escala las imágenes correctamente */
+}
+
+.story-item p {
+  width: 50%; /* Asegura que el texto ocupe suficiente espacio */
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+}
+
+.image-left img {
+  margin-right: 20px; /* Añade espacio a la derecha de la imagen */
+}
+
+.image-right img {
+  margin-left: 20px; /* Añade espacio a la izquierda de la imagen */
+}
+
+.image-left {
+  flex-direction: row; /* La imagen va a la izquierda */
+}
+
+.image-right {
+  flex-direction: row-reverse; /* La imagen va a la derecha */
+}

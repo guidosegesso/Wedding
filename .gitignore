@@ -1,0 +1,9 @@
+.vs/
+*.bak
+Release/
+Debug/
+obj/
+Properties/
+dist/
+Log/
+node_modules/

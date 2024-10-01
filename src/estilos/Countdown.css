@@ -1,0 +1,39 @@
+.countdown {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.timer div {
+  background-color: transparent;
+  color: var(--colorVerdeMilitar);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.timer span {
+  display: block;
+  font-size: rem;
+  color: var(--colorDorado); 
+}
+
+.calendar-btn {
+  background-color: var(--colorDorado);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.calendar-btn:hover {
+  background-color: #333;
+}

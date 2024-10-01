@@ -1,0 +1,24 @@
+.event {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  position: relative;
+}
+
+.rings-icon {
+  margin-bottom: 20px;
+}
+
+.rings-icon img {
+  width: 4rem; /* Tamaño del ícono de los anillos */
+  height: auto;
+}
+
+.event h2 {
+  color: var(--colorDorado); 
+}
+
+.event p {
+  color: #333;
+  font-size: 1.2rem;
+}
