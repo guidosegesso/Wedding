@@ -1,36 +1,53 @@
+/* Los elementos se ocultan inicialmente y están desplazados */
+.story-item.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Desplaza hacia abajo los elementos inicialmente */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Anima opacidad y posición */
+}
+
+/* Cuando aparecen, vuelven a su posición original y su opacidad es 100% */
+.story-item.appear {
+  opacity: 1;
+  transform: translateY(0); /* Regresa a su posición original */
+}
+
+/* Mantiene la estructura original de .story-item */
 .story-item {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Mantiene el espacio entre la imagen y el texto */
+  justify-content: space-around;
   padding: 5vh;
   background-color: rgba(148, 147, 87, 0.315);
+  transition: opacity 0.6s, transform 0.6s; /* Anima opacidad y desplazamiento */
 }
 
 .story-item img {
-  width: 30%; /* Limita el ancho de las imágenes */
+  width: 30%;
   border-radius: 5%;
-  object-fit: cover; /* Escala las imágenes correctamente */
+  object-fit: cover;
 }
 
+/* Aplica flexbox a cada columna de la story-item */
 .story-item p {
-  width: 50%; /* Asegura que el texto ocupe suficiente espacio */
-  font-size: 1.1rem;
-  color: #333;
-  text-align: justify;
+  white-space: pre-line;
+  width: 50%; /* Hace que el texto ocupe todo el ancho disponible */
+  font-size: 2rem;
+  color: var(--colorVerdeMilitar);
+  padding: 0 10px; /* Añade algo de espacio en los lados del texto */
 }
 
 .image-left img {
-  margin-right: 20px; /* Añade espacio a la derecha de la imagen */
+  margin-right: 20px;
 }
 
 .image-right img {
-  margin-left: 20px; /* Añade espacio a la izquierda de la imagen */
+  margin-left: 20px;
 }
 
 .image-left {
-  flex-direction: row; /* La imagen va a la izquierda */
+  flex-direction: row;
 }
 
 .image-right {
-  flex-direction: row-reverse; /* La imagen va a la derecha */
+  flex-direction: row-reverse;
 }

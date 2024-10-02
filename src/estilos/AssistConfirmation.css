@@ -18,31 +18,19 @@
 
 .rsvp input, .rsvp button {
   padding: 10px;
-  border: 2px solid #333;
+  border: 2px solid var(--colorDorado);
   border-radius: 5px;
 }
 
 .rsvp button {
-  background-color: var(--colorVerdeMilitar);
-  color: white;
-  cursor: pointer;
-}
-
-.rsvp button:hover {
-  background-color: #333;
-}
-
-.checkin-btn {
   background-color: var(--colorDorado);
   color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.checkin-btn:hover {
-  background-color: #333;
+.rsvp button:hover, .rsvp input:hover {
+  background-color: var(--colorVerdeMilitar);
+  border: 2px solid var(--colorVerdeMilitar);
 }
 
 .rsvp h3 {
