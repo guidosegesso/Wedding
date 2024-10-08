@@ -31,7 +31,7 @@ function App() {
       <Navbar lang={translations[language].navBar} />
       <Home lang={translations[language].home} />
       <Story lang={translations[language].story} />
-      <div className="event-dresscode-container">
+      <div className="event-dresscode-container" style={{backgroundColor: "#f4f4f4"}}>
         <Event lang={translations[language].event} />
         <DressCode lang={translations[language].dressCode} />
       </div>
