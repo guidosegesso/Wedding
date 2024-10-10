@@ -24,15 +24,21 @@ const translations = {
             placeTitle: "Ubicacion",
             placeDescription: "Quinta El Capricho",
             dateTitle: "Fecha",
-            dateDescription: "20 de Septiembre de 2025",
+            dateDescription: "4 de Octubre de 2025",
             startTitle: "Comienzo",
             startDescription: "16:00"
+        },
+        map:{
+            title: "Mapa",
+            show: "Mostrar Mapa",
+            hide: "Ocultar Mapa",
+            buton: "Como llegar",
         },
         dressCode: {
             description: "Instrucciones sobre el código de vestimenta...",
         },
         countdown: {
-            title: "¡Faltan!",
+            title: "¡Cuenta Regresiva!",
             days: "Días",
             hours: "Horas",
             minutes: "Minutos",
@@ -81,6 +87,12 @@ const translations = {
             dateDescription: "September 20, 2025",
             startTitle: "Start",
             startDescription: "16:00"
+        },
+        map:{
+            title: "Map",
+            show: "Show Map",
+            hide: "Hide Map",
+            buton: "How to get there"
         },
         dressCode: {
             description: "Instructions abour dresscode...",

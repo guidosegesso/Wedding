@@ -1,29 +1,26 @@
+.dresscode {
+  padding: 4vh 0 4vh 0;
+  position: relative;
+  text-align: center;  
+}  
+
 .hanger-icon {
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
+    height: 4.5rem;
+    width: 4.5rem;
   }
-
-.hanger-icon img {
-    width: 4rem; /* Tamaño del ícono del parlante */
-  }
-
-  #dresscode {
-    padding: 50px 20px;    
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-  }  
   
-  #dresscode h2 {
+  .dresscode h2 {
     font-size: 2rem;
     color: var(--colorDorado);
   }
   
-  #dresscode p {
+  .dresscode p {
     font-size: 1.2rem;
     color: #555;
   }
   
-  #dresscode::before {
+  .dresscode::before {
     content: "";
     position: absolute;
     top: 0;

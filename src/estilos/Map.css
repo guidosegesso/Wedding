@@ -1,0 +1,57 @@
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content.visible {
+    opacity: 1;
+    height: auto; /* Ajusta el tamaño dinámicamente */
+    transition: opacity 2s ease-out, height 2s ease-out; /* Duración de la transición de aparición */
+}
+
+.content.hidden {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0s ease-in, height 0s ease-in; /* Duración de la transición de desaparición */
+}
+
+.title{
+    cursor: pointer; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.eye-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 2vh;
+    fill: var(--colorDorado);
+}
+
+#map h2{
+    font-size: 2rem;
+    color: var(--colorDorado);
+}
+
+.frame{
+    width: 80vh; 
+    height: 40vh;
+}
+
+.route-btn {
+    background-color: var(--colorDorado);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+.route-btn:hover {
+    background-color: var(--colorVerdeMilitar);
+}
+  

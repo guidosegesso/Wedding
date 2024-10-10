@@ -5,10 +5,10 @@ const Navbar = ({ lang }) => {
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#hero">{lang.home}</a></li>
+        <li><a href="#home">{lang.home}</a></li>
         <li><a href="#story">{lang.story}</a></li>
         <li><a href="#event">{lang.event}</a></li>
-        <li><a href="#rsvp">{lang.assist}</a></li>
+        <li><a href="#assistConfirmation">{lang.assist}</a></li>
       </ul>
     </nav>
   );

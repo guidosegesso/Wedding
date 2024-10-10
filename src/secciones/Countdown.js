@@ -6,7 +6,7 @@ import '../estilos/FlipClock.css';
 
 
 const Countdown = ({ lang }) => {
-  const weddingDate = new Date('2025-09-20T18:00:00');
+  const weddingDate = new Date('2025-10-04T16:00:00');
   const calculateTimeLeft = () => {
     const now = new Date();
     const difference = weddingDate - now;

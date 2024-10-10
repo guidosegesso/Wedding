@@ -37,18 +37,20 @@
   }
 }
 
+.data-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
 .event-dresscode-container {
   display: flex;
-  justify-content: space-between; /* Espacio entre ambas secciones */
+  justify-content: center; /* Espacio entre ambas secciones */
   align-items: stretch; /* Asegura que ambas secciones tengan la misma altura */
-  gap: 20px; /* Espacio entre las secciones */
+  gap: 35vh;
 }
 
 .event, .dresscode {
-  padding: 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
+  flex: 1; /* Hace que ambas secciones ocupen el mismo ancho disponible */
+  max-width: 500px; /* Establece un ancho máximo para las secciones, si es necesario */
 }

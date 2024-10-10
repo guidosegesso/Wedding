@@ -6,6 +6,7 @@ import Event from './secciones/Event';
 import Countdown from './secciones/Countdown';
 import AssistConfirmation from './secciones/AssistConfirmation';
 import DressCode from './secciones/DressCode';
+import Map from './secciones/Map';
 import Presents from './secciones/Presents';
 import LanguageSwitcher from './componentes/LanguageSwitcher'; // Importar el selector de idioma
 import LanguageSwitcher2 from './componentes/LanguageSwitcher-2'; // Importar el selector de idioma
@@ -25,16 +26,21 @@ function App() {
   return (
     <div className="App">
       <LanguageSwitcher changeLanguage={changeLanguage} />
-      <LanguageSwitcher2/>
       <AudioPlayer />
       {/* Secciones */}
       <Navbar lang={translations[language].navBar} />
       <Home lang={translations[language].home} />
       <Story lang={translations[language].story} />
-      <div className="event-dresscode-container" style={{backgroundColor: "#f4f4f4"}}>
-        <Event lang={translations[language].event} />
-        <DressCode lang={translations[language].dressCode} />
+      
+      <div className="data-container" style={{backgroundColor: "#f4f4f4"}}>
+        <div className="event-dresscode-container">
+          <Event lang={translations[language].event} />
+          <DressCode lang={translations[language].dressCode} />
+        </div>
+        
+        <Map lang={translations[language].map} />
       </div>
+
       <Countdown lang={translations[language].countdown} />
       <Presents lang={translations[language].presents} /> {/* Nueva sección de regalos */}
       <AssistConfirmation lang={translations[language].assistConfirmation} />

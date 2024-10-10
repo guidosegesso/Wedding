@@ -11,6 +11,11 @@
   font-size: 2rem;
 }
 
+#countdown h2{
+  font-size: 2rem;
+  color: var(--colorDorado);
+}
+
 .timer div {
   background-color: transparent;
   color: var(--colorVerdeMilitar);
