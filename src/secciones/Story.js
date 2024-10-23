@@ -3,6 +3,7 @@ import '../estilos/Story.css';
 import image1 from '../images/story1.jpg';
 import image2 from '../images/story2.jpg';
 import image3 from '../images/story3.jpg';
+import gif from '../images/gif/2 opcion/footprint_alone.gif';
 // import image4 from '../images/story4.jpg';
 
 const Story = ({ lang }) => {
@@ -46,6 +47,15 @@ const Story = ({ lang }) => {
   return (
     <section id="story" className="story">
       <h2>{lang.title}</h2>
+
+      <div className='footContainer1'>
+        <img className='footPrints1' src={gif} alt="Footprints gif" />
+      </div>
+      
+      <div className='footContainer2'>
+        <img className='footPrints2' src={gif} alt="Footprints gif" />
+      </div>
+
       {storyItems.map((item, index) => (
         <div
           key={index}
