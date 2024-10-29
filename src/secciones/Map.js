@@ -26,19 +26,19 @@ const Map = ({ lang }) => {
                 <h2>{lang.title}</h2>
             </div>
             
-            <div className={`content ${isVisible ? 'visible' : 'hidden'}`}>
-                <iframe className="frame"
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6590.347427100747!2d-58.7621071088469!3d-34.32059517081544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDE4JzU3LjIiUyA1OMKwNDUnNDEuNyJX!5e0!3m2!1ses-419!2sar!4v1728515993060!5m2!1ses-419!2sar"
-                        style={{border: "0;"}} allowFullScreen="" loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div className={`content ${isVisible ? 'visible' : 'hidden'}`}>
+                    <iframe className="frame" 
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6590.347427100747!2d-58.7621071088469!3d-34.32059517081544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDE4JzU3LjIiUyA1OMKwNDUnNDEuNyJX!5e0!3m2!1ses-419!2sar!4v1728515993060!5m2!1ses-419!2sar"
+                            style={{ display: isVisible ? 'block' : 'none' }}
+                            referrerPolicy="no-referrer-when-downgrade">
+                    </iframe>
 
-                <button className="route-btn" onClick={openGoogleMaps}>
-                    {lang.buton}
-                </button>
-            </div>
-            
-            
+                    <div style={{ display: isVisible ? 'block' : 'none' }}>
+                        <button className="route-btn" onClick={openGoogleMaps}>
+                            {lang.buton}
+                        </button>    
+                    </div>
+                </div>
         </section>
     );
 };

@@ -39,6 +39,7 @@
 .frame{
     width: 80vh; 
     height: 40vh;
+    border: 0;
 }
 
 .route-btn {
